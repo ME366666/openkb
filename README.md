@@ -9,10 +9,26 @@
 ```powershell
 irm https://github.com/ME366666/openkb/releases/latest/download/install.ps1 | iex
 ```
-open
+
 安装完成后，关闭当前终端重新打开，运行 `kb init` 开始使用。
 
 > 安装目录为 `C:\Users\<用户名>\.kb-bin\`，会自动加入 PATH。
+
+### 注意：安装和使用过程中会创建以下文件：                                                                                           
+   **安装目录 `C:\Users\<用户名>\.kb-bin\`**                                                                                  
+  | 文件 | 说明 |                                           
+  |------|------|
+  | `kb.exe` | 主程序 |
+  | `*.dll` | 仓颉运行时库（51 个文件） |
+
+  **数据目录 `C:\Users\<用户名>\.kb\`**
+  | 文件 | 说明 |
+  |------|------|
+  | `config.txt` | 配置文件（学校、学期开始日、主题、吉祥物） |
+  | `baseline.txt` | 课表原始数据 |
+  | `edits.txt` | 编辑记录（手动添加/删除/修改的课程） |
+
+  **卸载**：直接删除 `.kb-bin` 和 `.kb` 两个文件夹即可，无残留。
 
 ## 初始化
 
