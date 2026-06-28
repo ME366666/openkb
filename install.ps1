@@ -4,7 +4,7 @@
 
 $ErrorActionPreference = "Stop"
 $installDir = "$env:USERPROFILE\.kb-bin"
-$releaseUrl = "https://github.com/ME366666/kb/releases/latest/download"
+$releaseUrl = "https://github.com/ME366666/openkb/releases/latest/download"
 
 Write-Host "=== kb 课表工具 安装 ===" -ForegroundColor Cyan
 
