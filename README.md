@@ -7,9 +7,9 @@
 打开 PowerShell，复制粘贴以下命令：
 
 ```powershell
-irm https://github.com/ME366666/kb/releases/latest/download/install.ps1 | iex
+irm https://github.com/ME366666/openkb/releases/latest/download/install.ps1 | iex
 ```
-
+open
 安装完成后，关闭当前终端重新打开，运行 `kb init` 开始使用。
 
 > 安装目录为 `C:\Users\<用户名>\.kb-bin\`，会自动加入 PATH。
