@@ -14,8 +14,11 @@ if (!(Test-Path $installDir)) {
 }
 
 # 2. 判断本地还是远程安装
-$localDir = Split-Path -Parent $MyInvocation.MyCommand.Path
-if ($localDir -and (Test-Path "$localDir\kb.exe")) {
+$myPath = $MyInvocation.MyCommand.Path
+if ($myPath) {
+    $localDir = Split-Path -Parent $myPath
+}
+if ($myPath -and (Test-Path "$localDir\kb.exe")) {
     Write-Host "本地安装..." -ForegroundColor Yellow
     Copy-Item "$localDir\kb.exe", "$localDir\*.dll" -Destination $installDir -Force
 } else {
