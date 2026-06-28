@@ -2,6 +2,7 @@
 # 远程: irm https://github.com/xxx/releases/latest/download/install.ps1 | iex
 # 本地: .\install.ps1
 
+chcp 65001 >$null
 $ErrorActionPreference = "Stop"
 $installDir = "$env:USERPROFILE\.kb-bin"
 $releaseUrl = "https://github.com/ME366666/openkb/releases/latest/download"
